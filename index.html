@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurah Mesin Profesional - Bersih, Cepat, Aman</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* Header */
+        header {
+            background: #fff;
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+        }
+
+        .cta-button {
+            background: #3498db;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('mesin-bg.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            padding: 0 5%;
+            color: white;
+            margin-top: 60px;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 5rem 5%;
+            background: #f9f9f9;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .service-card i {
+            font-size: 2.5rem;
+            color: #3498db;
+            margin-bottom: 1rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 5rem 5%;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 5rem 5%;
+            background: #f9f9f9;
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        /* WhatsApp Float */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #25D366;
+            color: white;
+            padding: 1rem;
+            border-radius: 50%;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">GURAHMESINPROF.COM</div>
+            <div class="nav-links">
+                <a href="#home">Beranda</a>
+                <a href="#services">Layanan</a>
+                <a href="#about">Tentang Kami</a>
+                <a href="#testimonials">Testimoni</a>
+                <a href="#contact" class="cta-button">Hubungi</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Layanan Gurah Mesin Profesional</h1>
+            <p>Solusi tepat untuk perawatan mesin Mobil kendaraan pribadi Anda</p>
+            <a href="https://wa.me/6288220211486" class="cta-button">Pesan via WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <h2>Layanan Kami</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-car"></i>
+                <h3>Gurah Mesin Mobil</h3>
+                <p>Membersihkan mesin mobil secara profesional dengan teknologi terbaru</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-motorcycle"></i>
+                <h3>Gurah Mesin Motor</h3>
+                <p>Perawatan mesin motor lengkap dengan garansi</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-industry"></i>
+                <h3>Gurah Mesin Perusahaan</h3>
+                <p>Layanan gurah untuk mesin mobil industri / perusahaan aman berat dan ringan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <h2>Testimoni Pelanggan</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial-card">
+                <p>"Hasilnya luar biasa! Mesin mobil saya kembali seperti baru."</p>
+                <h4>Budi Santoso</h4>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <!-- Tambahkan testimoni lainnya -->
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Hubungi Kami</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Kontak Langsung</h3>
+                <p><i class="fas fa-phone"></i> +62 882-2021-1486</p>
+                <p><i class="fas fa-envelope"></i> www.gurahmesinprof.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Jl. Anggrek No. 7 Blotan Wedomartani Ngemplak Sleman, Daerah Istimewa Yogyakarta</p>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Nama Anda">
+                <input type="email" placeholder="Email Anda">
+                <textarea rows="5" placeholder="Pesan Anda"></textarea>
+                <button class="cta-button">Kirim Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/6288220211486" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form Submission
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah terkirim.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
